@@ -252,7 +252,7 @@
             const loading = document.getElementById('loading');
             const trackingInfo = document.getElementById('trackingInfo');
 
-            if (trackingNumber === "GA-375-3539") { // Specific tracking number
+            if (trackingNumber.trim() === "GA-375-3539") { // Utilisez .trim() pour supprimer les espaces
                 // Show loading animation
                 loading.style.display = 'block';
                 trackingInfo.style.display = 'none';
